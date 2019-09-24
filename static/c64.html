@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>Online c64 Emulator</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="./resources/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/toastr.css">
+    <link rel="stylesheet" href="./resources/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="./resources/padding.css" rel="stylesheet">
+    <link href="./resources/portfolio-item.css" rel="stylesheet">
+    <link href="./resources/c64.css" rel="stylesheet">
+    <link href="./resources/c64.keyboard.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Retro DevOps</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bbsterminal.html">BBS Terminal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="c64.html">Online C64</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Portfolio
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                  <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                  <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+                  <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                  <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                  <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Blog
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                  <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                  <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Other Pages
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                  <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                  <a class="dropdown-item" href="404.html">404</a>
+                  <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">Commodore 64 JavaScript Emulator</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Progress bar -->
+                <div id="status"></div>
+                <div>
+                    <progress id="progress" max="1" value="0" hidden=""></progress>
+                </div>
+
+                <!-- Emulator displays here -->
+                <div id="canvas_container">
+                    <div id="canvas_overlay_left"></div>
+                    <div id="canvas_overlay_right"></div>
+                    <canvas id="canvas" width="368" height="270"></canvas>
+                </div>
+
+                <!-- Emulator controls -->
+                <div class="text-center mt15" id="controls">
+                    <div id="network_status"></div>
+                    <div id="highScore_title"></div>
+                    <div id="highScore_status"></div>
+                    <div id="diskbox_combo"></div>
+                    <div id="help_main">
+                        <div id="help_div"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Right Side Tabbed Navigation -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active show" id="fileManagement-tab" data-toggle="tab" href="#fileManagement" role="tab" aria-selected="true">File List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="c64Control-tab" data-toggle="tab" href="#c64Control" role="tab" aria-selected="false">Controls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="help-tab" data-toggle="tab" href="#help" role="tab" aria-selected="false">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="credit-tab" data-toggle="tab" href="#credit" role="tab" aria-selected="false">Credits</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-- File Management Tab -->
+                    <div class="tab-pane fade active show" id="fileManagement" role="tabpanel">
+                        <div class="mt10 ml10">
+                            <h6>Disk Images</h6>
+                            <div class="content mb15">
+                                <form class="form-inline" id="upload_form" name="uploads">
+                                    <select class="form-control" id="selectImage" type="file">
+                                        <option value="brucelee.D64">brucelee.d64</option>
+                                        <option value="scratch.d64">scratch.d64</option>
+                                        
+                                    </select>
+                                    <input class="btn btn-success btn-sm ml10" name="submit" type="submit" value="Load and Play">
+                                </form>
+                            </div>
+                            <h6>Drop File and Play!</h6>
+                            <div contenteditable="false" id="c64TextInputReceiver" style="opacity: 0; color : transparent;"></div>
+                            <div id="c64_snaps">
+                                <form id="c64FileInput" name="c64FileInput">
+                                    <div id="drop_zone" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="&lt;b&gt;Accepts:&lt;/b&gt; S64, D64, G64, X64, ZIP, PRG, P00, T64, TAP and CRT image formats"></div>
+                                    <p>
+                                        <input checked="" name="startup" type="checkbox" value="autostart"> Auto Start
+                                    </p>
+                                    <input accept=".d64, .g64, .x64, .zip, .t64, .s64, .crt, .tap, .prg, .p00" id="c64fd" name="c64FileDialog" style="display:none" type="file">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- C64 Controls Tab-->
+                    <div class="tab-pane fade" id="c64Control" role="tabpanel">
+                        <div class="mt10 ml10" id="id=" key_field""="">
+                            <div class="row">
+                                <div class="col-md-11">
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-secondary btn-sm keyboardInput mb5 mr5" id="virtualKeyboard">
+                                            <i class="far fa-keyboard fa-lg"></i> Keyboard
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm mb5 mr5" name="cmd_fs" onclick="Module.requestC64FullScreen();">
+                                            <i class="fas fa-desktop fa-lg"></i> Fullscreen
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm mb5 mr5" name="cmd_tm" onclick="Module.toggleMute();">
+                                            <i class="fas fa-volume-off fa-lg"></i> Sound
+                                        </button>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-secondary btn-sm mb5 mr5" name="key_27">
+                                            <i class="far fa-stop-circle fa-lg"></i>
+                                            Run/Stop
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm mb5 mr5" name="cmd_sl">
+                                            <i class="fas fa-undo-alt fa-lg"></i> Restore
+                                        </button>
+                                        <button type="button" class="btn btn-secondary btn-sm mb5 mr5" onclick="Module.requestC64Reset()">
+                                            <i class="fas fa-power-off fa-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-warning btn-sm mb5" name="key_112"> F1 </button>
+                                    <button type="button" class="btn btn-warning btn-sm mb5" name="key_114"> F3 </button>
+                                    <button type="button" class="btn btn-warning btn-sm mb5" name="key_116"> F5 </button>
+                                    <button type="button" class="btn btn-warning btn-sm mb5" name="key_118"> F7 </button>
+                                </div>
+                            </div>
+
+                            <h6 class="mt30">Joystick Configuration</h6>
+                            <form class="form-inline" id="id_joyconf" name="joyconf">
+                                <select class="form-control" id="joySelect" size="1">
+                                    <option selected="" value="0x0">
+                                        Joystick OFF
+                                    </option>
+                                    <option value="0x201D">
+                                        Joystick ON
+                                    </option>
+                                    <option value="0x1D20">
+                                        Joystick Swap Ports (Player 2)
+                                    </option>
+                                    <option value="0x211E">
+                                        Joystick Keyboard 1 -&gt; Player 2
+                                    </option>
+                                    <option value="0x221D">
+                                        Joystick Keyboard 2 -&gt; Player 2
+                                    </option>
+                                    <option value="0x201C">
+                                        Joystick Keyboard OFF
+                                    </option>
+                                </select>
+                                <button type="button" class="btn btn-success btn-sm ml10" id="call_joy_test">Test</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Help Tab-->
+                    <div class="tab-pane fade" id="help" role="tabpanel">
+                        <p class="text-justify">
+                            Games can be played with a gamepad/joystick attached to your device, or you can use joystick emulation as follows
+                        </p>
+
+                        <b>Keyboard Layout 1</b>
+                        <ul>
+                            <li>Cursor Keys and Left Ctrl Key</li>
+                        </ul>
+                        <b>Keyboard Layout 2</b>
+                        <ul>
+                            <li>W/S/A/D and Left Shift key</li>
+                        </ul>
+                        <b>Touch Screen</b>
+                        <ul>
+                            <li>4 directions/corners and the middle position</li>
+                        </ul>
+                        <p>The game status from the "Save" button is available for every game after restart also.</p>
+                    </div>
+                    <!-- Credit Tab-->
+                    <div class="tab-pane fade" id="credit" role="tabpanel">
+                        <p class="text-justify">
+                            We extend our warmest thanks and deepest regards to the author of the C64 JavaScript Emulator to Thomas Hochgoetz
+                            for this wonderful tool and his dedication to keeping the memory of the Commodore 64 alive for generations to come.
+                        </p>
+                        <p>
+                            The <a href="https://c64emulator.111mb.de/index.php?site=pp_javascript&amp;lang=en&amp;group=c64" target="_blank">C64 JavaScript Emulator</a> is free for non-commercial use only.
+                            </p><div id="print_version">V1.0.4.5/4942</div>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /.row -->
+        <!-- Related Projects Row -->        
+
+        <div class="row">
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+    <!-- Footer -->
+    <footer class="">
+        <div class="container">
+            <p class="m-0 text-center">Copyright © Retro Devops 2019. All rights reserved.</p>
+        </div><!-- /.container -->
+    </footer>
+
+    <!-- Vendor JavaScript -->
+    <script src="./resources/jquery.min.js"></script>
+    <script src="./resources/bootstrap.bundle.min.js"></script>
+    <script src="./resources/toastr.js"></script>
+
+    <!-- App Config -->
+    <script src="./resources/app.config.js"></script>
+    <script src="./resources/app.helpers.js"></script>
+    <script src="./resources/app.services.js"></script>
+
+    <!-- C64 Javascript Emulator -->
+    <script src="./resources/c64_tiny_host.js"></script>
+    <script src="./resources/pp_javascript.js"></script>
+    <script async="" src="./resources/c64_tiny.js"></script>
+    <script src="./resources/keyboard.js"></script>
+
+
+</body></html>

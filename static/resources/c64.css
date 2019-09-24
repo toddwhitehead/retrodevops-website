@@ -1,0 +1,231 @@
+#canvas {
+	display: block;
+	width: 92%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-transform: scale(1.094, 1);
+	-moz-transform: scale(1.094, 1);
+	-ms-transform: scale(1.094, 1);
+	-o-transform: scale(1.094, 1);
+	transform: scale(1.094, 1);
+}
+#canvas:-webkit-full-screen {
+	float: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+}
+#canvas:-moz-full-screen {
+	float: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+}
+#canvas:-ms-full-screen {
+	float: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+}
+#canvas:-o-full-screen {
+	float: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+}
+#canvas:full-screen {
+	float: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+}
+#canvas_container {
+	position: relative;
+}
+#canvas_overlay_left {
+	position: absolute;
+	z-index: 2147483647;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	display: none;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'>\
+<circle cx='5%' cy='50%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+<circle cx='25%' cy='50%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+<circle cx='15%' cy='34%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+<circle cx='15%' cy='66%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+</svg>");
+}
+#canvas_overlay_right {
+	position: absolute;
+	z-index: 2147483647;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	display: none;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'>\
+<circle cx='75%' cy='50%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+<circle cx='95%' cy='50%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+<circle cx='85%' cy='34%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+<circle cx='85%' cy='66%' r='5%' fill='lightgray' fill-opacity='0.3'/>\
+</svg>");
+}
+/* Tooltip text */
+
+/* Help
+#help_main {
+	position: relative;
+}
+#help_main #help_div {
+	display: none;
+	width: 300px;
+	background-color: #555;
+	color: #fff;
+	text-align: left;
+	padding: 5px 0 5px 10px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	top: 125%;
+	left: 50%;
+	margin-left: -100px;
+}
+*/
+#drop_zone {
+	cursor: pointer;
+	background-color: #dddddd;
+	padding: 10px;
+	border: 2px dashed #a0a0ff;
+	width: 100%;
+	height: 50px;
+}
+
+/* Print Version
+@media screen and (min-width: 700px) {
+	#print_version {
+		float: right;
+		font-size: x-small;
+		color: #868686;
+	}
+	.hide_mobile {}
+}
+@media screen and (max-width: 699px) {
+	#print_version {
+		display: none;
+	}
+	.hide_mobile {
+		display: none;
+	}
+}
+*/
+
+/* Button (Use Bootstrap)
+.button {
+	display: inline-block;
+	white-space: nowrap;
+	background-color: #ccc;
+	background-image: linear-gradient(top, #eee, #ccc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+	border: 1px solid #777;
+	padding: 0 1.0em;
+	margin: 0.1em;
+	font: bold 0.9em/2em Arial, Helvetica;
+	text-decoration: none;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+	border-radius: .2em;
+	box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+}
+.button:hover {
+	background-color: #ddd;
+	background-image: linear-gradient(top, #fafafa, #ddd);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+}
+.button:enabled:active {
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, .3) inset;
+	position: relative;
+	top: 1px;
+}
+.button:disabled {
+	opacity: 0.5;
+}
+.button#highlight {
+	animation-duration: .5s;
+	animation-name: hblink;
+	animation-iteration-count: 6;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-delay: 5s;
+}
+
+@keyframes hblink {
+	from {
+		background-color: #ccc;
+	}
+	to {
+		background-color: #def;
+	}
+}
+.button:before {
+	background: #ccc;
+	background: rgba(0, 0, 0, .1);
+	float: left;
+	width: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0 0.8em 0 -1em;
+	padding: 0 .4em;
+	box-shadow: 1px 0 0 rgba(0, 0, 0, .5), 2px 0 0 rgba(255, 255, 255, .5);
+	border-radius: .15em 0 0 .15em;
+	pointer-events: none;
+}
+.bhighlight {
+	color: #33b;
+}
+*/
+/* Hexadecimal entities for the icons */
+
+/* More button stuff
+.add:before {
+	content: "\271A";
+}
+.edit:before {
+	content: "\270E";
+}
+.delete:before {
+	content: "\2718";
+}
+.save:before {
+	content: "\2714";
+}
+.email:before {
+	content: "\2709";
+}
+.like:before {
+	content: "\2764";
+}
+.next:before {
+	content: "\279C";
+}
+.full:before {
+	content: "\25A3";
+}
+.sound:before {
+	content: "\2706";
+}
+.play:before {
+	content: "\25B6";
+}
+*/
+

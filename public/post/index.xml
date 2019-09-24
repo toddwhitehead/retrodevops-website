@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Retro DevOps Blog</title>
+    <link>http://www.retrodevsops.com/blog/post/</link>
+    <description>Recent content in Articles on Retro DevOps Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.retrodevsops.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connecting a real C64 in 2019</title>
+      <link>http://www.retrodevsops.com/blog/post/connecting-a-real-c64-in-2019/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/blog/post/connecting-a-real-c64-in-2019/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+ Fusce pharetra suscipit orci nec tempor.</description>
+    </item>
+    
+    <item>
+      <title>Developing Code for the C64</title>
+      <link>http://www.retrodevsops.com/blog/post/developing-for-the-c64/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/blog/post/developing-for-the-c64/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+ Fusce pharetra suscipit orci nec tempor.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a Dev Environment for the C64</title>
+      <link>http://www.retrodevsops.com/blog/post/setup-retro-dev-environment/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/blog/post/setup-retro-dev-environment/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+ Fusce pharetra suscipit orci nec tempor.</description>
+    </item>
+    
+    <item>
+      <title>Why Retro DevOps?</title>
+      <link>http://www.retrodevsops.com/blog/post/why-retro-devops/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/blog/post/why-retro-devops/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+ Fusce pharetra suscipit orci nec tempor.</description>
+    </item>
+    
+  </channel>
+</rss>

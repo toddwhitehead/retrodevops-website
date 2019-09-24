@@ -1,0 +1,95 @@
+baseURL = "http://www.retrodevsops.com"
+languageCode = "en-us"
+title = "Retro DevOps Blog"
+
+theme = "terminal"
+disqusShortname = "retrodevops"
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+
+  [params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "blue"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 8
+  # show selector to switch language
+  showLanguageSelector = false
+  # set theme to full screen width
+  fullWidthTheme = false
+  # center theme with default width
+  centerTheme = true
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Retro DevOps"
+    subtitle = "A simple, retro theme for Hugo"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Retro DevOps"
+      logoHomeLink = "/"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "introduction"
+        name = "Introduction"
+        url = "/c64.html"
+      [[languages.en.menu.main]]
+        identifier = "c64emulator"
+        name = "Online C64"
+        url = "/c64.html"
+      [[languages.en.menu.main]]
+        identifier = "bbsterminal"
+        name = "BBS Terminal"
+        url = "/bbsterminal.html"
+
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".gif$"]
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "mydeployment"
+
+# Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+# URL = "azblob://$web"
+
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+# Samples:
+
+[[deployment.matchers]]
+#  Cache static assets for 20 years.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=630720000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=630720000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true
