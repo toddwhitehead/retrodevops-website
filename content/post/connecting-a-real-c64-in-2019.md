@@ -4,7 +4,7 @@ date = "2019-10-16"
 author = "Todd Whitehead"
 tags = ["getting-started", "real-c64"]
 featured_image =  "/images/c64-with-box.jpg"
-description = "Explains the equipment and perils to successfully connect and run a Commodore 64 in 2019"
+description = "So you want to relive the 80's and fire up a real C64? This article explains the equipment required and perils involved to successfully run a Commodore 64 in 2019 for fun and profit. Well fun anyway."
 showFullContent = false
 +++
 
@@ -42,8 +42,15 @@ The SD2IEC is opensource hardware and firmware that provides a mass storage devi
 I like both the C64c style look of the device and the fact you can chose how the unit is powered e.g. usb, C64 tape port.
 
 {{< figure src="/images/sd2iecplus.png" title="The Future was 8bit's excellent SD2IEC+" >}}
+## Internet Connectivity
+The [WiModem](https://www.cbmstuff.com/proddetail.php?prod=WiModemOLED) is an internet modem for your Commodore 8 bit computer that emulates a standard Hayes compatible modem. The WiModem hardware supports 300 baud to 57600 baud but 2400 baud is the comfortable spot for the C64. I like the fact that this version has a 128x64 OLED screen that displays the modem and connection status information which is very handy for trouble shooting. I just wish it came with a case.
+
+{{< figure src="/images/wimodem.png" title="WiModem w/OLED from CBM Stuff" >}}
+
+An alternative is the [WiFi 64](https://www.gamedude.com.au/products/shop/commodore-64-wifi-modem-model-wifi64) which lacks a OLED display but does come in a rugged case.
 
 ## Other Accesseries
+
 With 3D printing, accessible electronics and a growing retro-tech community there are a vast array of other options and accessories. Listed below are some of the other resources that might be useful.
 
 - [https://www.retroleum.co.uk/](https://www.retroleum.co.uk/) Here you'll find various new, unused old stock and salvaged retro computer components and peripherals, mainly for the ZX Spectrum and Commodore 64.
