@@ -51,15 +51,18 @@ enableRobotsTXT = true
       [[languages.en.menu.main]]
         identifier = "introduction"
         name = "Introduction"
-        url = "/c64.html"
+        url = "/"
+        weight = 10
       [[languages.en.menu.main]]
         identifier = "c64emulator"
         name = "Online C64"
         url = "/c64.html"
+        weight = 20
       [[languages.en.menu.main]]
         identifier = "bbsterminal"
         name = "BBS Terminal"
         url = "/bbsterminal.html"
+        weight = 30
 
 [deployment]
 # By default, files are uploaded in an arbitrary order.
