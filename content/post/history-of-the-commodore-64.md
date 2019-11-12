@@ -14,7 +14,9 @@ This long and successful run made it attractive to software developers with appr
 {{< figure src="/images/c64-with-box.jpg" title="A commodore 64 deplayed with its box" >}}
 
 ## The Commodore 64 by The 8-Bit Guy
+
 {{< youtube BpXFB8ZEH30 >}}
 
 ## Commodore 64 Story & Review by  Nostalgia Nerd
+
 {{< youtube 3grRR9-XHXg >}}

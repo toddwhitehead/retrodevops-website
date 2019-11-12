@@ -5,8 +5,14 @@ description: "Retro devops because the 1980s rocked"
 ---
 This site is a companion to my "Azure, DevOps and the Commodore 64" presentation. The goal heres is to show that there really aren't any technical reasons not reap the benefits from adopting DevOps. To achieve this goal we build a fully functional DevOps pipleine using Azure DevOps and that icon of the 1980's: the Commodore 64.
 
-Update: Slides from NDC Sydney are now [available here](https://www.slideshare.net/toddwhitehead1/devops-and-the-c64-whats-your-excuse
+## Session delivered at NDC Sydney 2019
+
+{{< youtube ZsXr-MprASE >}}
+
+Slides [available here](https://www.slideshare.net/toddwhitehead1/devops-and-the-c64-whats-your-excuse
 )
+
+## Learn More
 
 1. Explore the [Articles](/post) to see how this thing was put together
 2. Get hands on with the embedded [C64 Emulator](/c64.html)
