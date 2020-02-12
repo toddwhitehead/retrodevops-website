@@ -1,6 +1,10 @@
 [
     {
-      "displayName": "Bomb Mania Demo",
-      "fileName": "bomb-mania-demo.d64"
+      "displayName": "Hello World 1",
+      "fileName": "hworld1.prg"
+    },
+    {
+      "displayName": "Hello World 2",
+      "fileName": "hworld2.prg"
     }
   ]
