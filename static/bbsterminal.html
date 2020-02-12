@@ -51,25 +51,22 @@
 <script>
     var Options = new fTelnetOptions();
     Options.BareLFtoCRLF = false;
-    Options.BitsPerSecond = 9600;
+    Options.BitsPerSecond = 19200;
     Options.ConnectionType = 'telnet';
-    Options.Emulation = 'ansi-bbs';
+    Options.Emulation = 'C64';
     Options.Enter = '\r';
     Options.Font = 'CP437';
     Options.ForceWss = false;
     Options.Hostname = 'bbs.retrodevops.com';
     Options.LocalEcho = false;
     Options.NegotiateLocalEcho = true;
-    Options.Port = 23;
-    Options.ProxyHostname = 'proxy-au.ftelnet.ca';
-    Options.ProxyPort = 8410;
-    Options.ProxyPort = 8411;
+    Options.Port = 8080;
     Options.ScreenColumns = 80;
     Options.ScreenRows = 25;
     Options.SendLocation = true;
     var fTelnet = new fTelnetClient('fTelnetContainer', Options);
 </script>
-</div>
+        </div>
 
   </div>
   <!-- /.container -->
