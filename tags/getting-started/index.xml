@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>getting-started on Retro DevOps</title>
+    <link>http://www.retrodevsops.com/tags/getting-started/</link>
+    <description>Recent content in getting-started on Retro DevOps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.retrodevsops.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connecting a real C64 in 2019</title>
+      <link>http://www.retrodevsops.com/post/connecting-a-real-c64-in-2019/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/post/connecting-a-real-c64-in-2019/</guid>
+      <description>Power Supply Replacing the power supply for a C64 is one of the most critical steps to ensuring it&amp;rsquo;s survival. Any 35+ year old power unit would be a cause for concern but the C64&amp;rsquo;s is particulalrly dangerous. The original power supplies were built cheap and lack any form of over-volatge protection. This means they have a high failure rate and such a failure is likely to fry your pride and joy.</description>
+    </item>
+    
+    <item>
+      <title>History of the C64</title>
+      <link>http://www.retrodevsops.com/post/history-of-the-commodore-64/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/post/history-of-the-commodore-64/</guid>
+      <description>The Commodore 64 (C64) is an 8-bit home computer introduced in January 1982 by Commodore International. The combination of clever technology and innovative sales strategies helped to make it the highest-selling single computer model of all time with independent estimates placing the number sold between 10 and 17 million units. The C64 dominated the low-end computer market for most of the 1980s and introduced a whole generation of people to the idea of a home computer.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a Dev Environment for the C64</title>
+      <link>http://www.retrodevsops.com/post/setup-retro-dev-environment/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/post/setup-retro-dev-environment/</guid>
+      <description>Coming Soon.</description>
+    </item>
+    
+  </channel>
+</rss>

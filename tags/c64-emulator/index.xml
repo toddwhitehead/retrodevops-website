@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c64-emulator on Retro DevOps</title>
+    <link>http://www.retrodevsops.com/tags/c64-emulator/</link>
+    <description>Recent content in c64-emulator on Retro DevOps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.retrodevsops.com/tags/c64-emulator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up a Dev Environment for the C64</title>
+      <link>http://www.retrodevsops.com/post/setup-retro-dev-environment/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/post/setup-retro-dev-environment/</guid>
+      <description>Coming Soon.</description>
+    </item>
+    
+    <item>
+      <title>Writing Code for the C64</title>
+      <link>http://www.retrodevsops.com/post/developing-for-the-c64/</link>
+      <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.retrodevsops.com/post/developing-for-the-c64/</guid>
+      <description>Comming soon.</description>
+    </item>
+    
+  </channel>
+</rss>

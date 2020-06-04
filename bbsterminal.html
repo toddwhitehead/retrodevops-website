@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Retro Devops - BBS Terminal</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/blue.css">
+</head>
+<div class="container center">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="/">
+        <div class="logo">
+          Retro DevOps
+        </div>
+      </a>
+      
+          </div>
+        </div>
+        
+          <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+                <li><a href="/">Introduction</a></li>
+                <li><a href="/c64.html">Online C64</a></li>          
+                <li><a href="/bbsterminal.html">BBS Terminal</a></li>          
+                <li><a href="/post/">Articles</a></li>
+        </ul>
+      </nav>      
+      </header>
+  <!-- Navigation -->
+  
+  <!-- Page Content -->
+  <div class="container ">
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">BBS Terminal</h1>
+      <div class="row">
+          <div class="col-md-12">
+  
+   <div id="fTelnetContainer" class="fTelnetContainer"></div>
+<script>document.write('<script src="//embed-v2.ftelnet.ca/js/ftelnet-loader.norip.xfer.js?v=' + (new Date()).getTime() + '"><\/script>');</script>
+<script>
+    var Options = new fTelnetOptions();
+    Options.BareLFtoCRLF = false;
+    Options.BitsPerSecond = 9600;
+    Options.ConnectionType = 'telnet';
+    Options.Emulation = 'ansi-bbs';
+    Options.Enter = '\r';
+    Options.Font = 'CP437';
+    Options.ForceWss = false;
+    Options.Hostname = 'bbs.retrodevops.com';
+    Options.LocalEcho = false;
+    Options.NegotiateLocalEcho = true;
+    Options.Port = 8080;
+    Options.ScreenColumns = 80;
+    Options.ScreenRows = 25;
+    Options.SendLocation = true;
+    var fTelnet = new fTelnetClient('fTelnetContainer', Options);
+</script>
+        </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="">
+      <div class="container">
+          <p class="m-0 text-center">Copyright © Retro Devops 2019. All rights reserved.</p>
+      </div><!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
