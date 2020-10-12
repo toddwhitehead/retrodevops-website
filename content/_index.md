@@ -7,7 +7,7 @@ This site is a companion to my "Azure, DevOps and the Commodore 64" presentation
 
 ## Session delivered at NDC Sydney 2019
 
-{{< youtube ZsXr-MprASE >}}
+{{< youtube iR9MfTDvL8g >}}
 
 Slides [available here](https://www.slideshare.net/toddwhitehead1/devops-and-the-c64-whats-your-excuse
 )
